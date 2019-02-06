@@ -13,4 +13,9 @@ defmodule SimpleWeb.UserView do
   def render("user.json", %{user: user}) do
     %{id: user.id, name: user.name, email: user.email}
   end
+
+  def render("all.json", %{user: user}) do
+    %{id: user.id, name: user.name, email: user.email}
+  end
+
 end
